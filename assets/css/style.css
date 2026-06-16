@@ -256,9 +256,13 @@ footer {
       gap: 1.2rem;
       flex-wrap: wrap;
    }
+
+   .artisan-badge-hero {
+      display: none;
+   }
 }
 
-/* custom additions for Abby */
+/* custom additions */
 .highlight-name {
    color: #FF2D20;
    font-weight: 700;
