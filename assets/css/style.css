@@ -1,0 +1,324 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: linear-gradient(145deg, #FDFCF8 0%, #F8F7F2 100%);
+   font-family: 'Inter', sans-serif;
+   color: #1F2937;
+   line-height: 1.5;
+   overflow-x: hidden;
+}
+
+.laravel-container {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 2rem 2rem 3rem;
+}
+
+/* navbar */
+.navbar-laravel {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+   padding: 0.5rem 0 1.5rem 0;
+   border-bottom: 2px solid #FF2D20;
+   margin-bottom: 3rem;
+}
+
+.logo-area {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+}
+
+.logo-icon {
+   background: #FF2D20;
+   width: 42px;
+   height: 42px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 1.6rem;
+   box-shadow: 0 8px 18px rgba(255, 45, 32, 0.2);
+}
+
+.logo-text {
+   font-weight: 800;
+   font-size: 1.5rem;
+   letter-spacing: -0.3px;
+   background: linear-gradient(135deg, #FF2D20, #E63E2E);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+}
+
+.nav-links {
+   display: flex;
+   gap: 2rem;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: #334155;
+   font-weight: 500;
+   transition: 0.2s;
+   font-size: 0.95rem;
+   border-bottom: 2px solid transparent;
+   padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+   color: #FF2D20;
+   border-bottom-color: #FF2D20;
+}
+
+.artisan-badge {
+   font-family: 'JetBrains Mono', monospace;
+   background: #1E293B;
+   display: inline-block;
+   padding: 0.25rem 1rem;
+   border-radius: 40px;
+   font-size: 0.7rem;
+   color: #CBD5E1;
+   letter-spacing: 0.3px;
+}
+
+.card-elegant {
+   background: white;
+   border-radius: 24px;
+   padding: 2rem;
+   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03), 0 0 0 1px rgba(0, 0, 0, 0.02);
+   transition: all 0.25s ease;
+   border: 1px solid #EDEADE;
+}
+
+.card-elegant:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 0 0 1px #FFE2DE;
+}
+
+.card-elegant h4 a {
+   text-decoration: none;
+   color: inherit
+}
+
+.btn-outline-laravel {
+   background: transparent;
+   border: 1.5px solid #FF2D20;
+   padding: 0.7rem 1.6rem;
+   border-radius: 40px;
+   font-weight: 600;
+   color: #FF2D20;
+   transition: 0.2s;
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 0.85rem;
+   text-decoration: none;
+}
+
+.btn-outline-laravel:hover {
+   background: #FF2D20;
+   color: white;
+   border-color: #FF2D20;
+   box-shadow: 0 4px 12px rgba(255, 45, 32, 0.3);
+}
+
+.btn-solid {
+   background: #FF2D20;
+   border: none;
+   padding: 0.7rem 1.8rem;
+   border-radius: 40px;
+   font-weight: 600;
+   color: white;
+   transition: 0.2s;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.btn-solid:hover {
+   background: #D92C1E;
+   box-shadow: 0 8px 20px rgba(255, 45, 32, 0.3);
+}
+
+.section-title {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+   letter-spacing: -0.02em;
+   position: relative;
+   display: inline-block;
+}
+
+.section-title:after {
+   content: '';
+   position: absolute;
+   bottom: -8px;
+   left: 0;
+   width: 50px;
+   height: 3px;
+   background: #FF2D20;
+   border-radius: 4px;
+}
+
+.section-title-center:after {
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.code-mood {
+   background: #1E293B;
+   border-radius: 16px;
+   padding: 1.25rem;
+   font-family: 'JetBrains Mono', monospace;
+   font-size: 0.8rem;
+   color: #E2E8F0;
+   margin: 1.5rem 0;
+   border-left: 4px solid #FF2D20;
+}
+
+.code-mood span {
+   color: #FFB86C;
+}
+
+.code-mood a {
+   text-decoration: none;
+}
+
+.skill-pill {
+   background: #F1F5F9;
+   padding: 6px 14px;
+   border-radius: 30px;
+   font-size: 0.8rem;
+   font-weight: 500;
+   color: #1E293B;
+   transition: 0.1s;
+   border: 1px solid #E2E8F0;
+   display: inline-block;
+   margin: 4px 4px 4px 0;
+   transition: 0.2s;
+}
+
+.skill-pill:hover {
+   background: #FF2D20 !important;
+   color: #F1F5F9 !important;
+}
+
+.feature-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   gap: 2rem;
+   margin: 2rem 0;
+}
+
+.project-item-laravel {
+   border-left: 3px solid #FF2D20;
+   padding-left: 1.2rem;
+   margin-bottom: 1.8rem;
+}
+
+footer {
+   margin-top: 5rem;
+   padding-top: 2rem;
+   border-top: 1px solid #E9E5D8;
+   text-align: center;
+   font-size: 0.8rem;
+   color: #64748B;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+   .laravel-container {
+      padding: 1.5rem;
+   }
+
+   /* .navbar-laravel {
+      flex-direction: column;
+      align-items: start;
+   } */
+
+   .section-title {
+      font-size: 1.8rem;
+   }
+
+   .nav-links {
+      gap: 1.2rem;
+      flex-wrap: wrap;
+   }
+
+   .artisan-badge {
+      display: none;
+   }
+}
+
+/* custom additions for Abby */
+.highlight-name {
+   color: #FF2D20;
+   font-weight: 700;
+}
+
+.contact-links {
+   text-decoration: none;
+   color: inherit;
+   transition: 0.2s;
+}
+
+.contact-links:hover {
+   color: #FF2D20;
+}
+
+.contact-chip {
+   background: #F1F5F9;
+   border-radius: 40px;
+   padding: 0.3rem 1rem;
+   font-size: 0.8rem;
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   border: 1px solid #E2E8F0;
+   margin: 0.2rem 0.4rem 0.2rem 0;
+}
+
+.contact-chip i {
+   color: #FF2D20;
+}
+
+/* badge above title helper — centered */
+.badge-title-wrap {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+
+.badge-title-wrap .section-title {
+   margin-bottom: 0;
+}
+
+.badge-title-wrap .section-title:after {
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+/* section header for work (already centered) */
+.section-header-center {
+   text-align: center;
+   margin-bottom: 2.5rem;
+}
+
+.section-header-center .badge-title-wrap {
+   align-items: center;
+}
