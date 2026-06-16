@@ -256,10 +256,6 @@ footer {
       gap: 1.2rem;
       flex-wrap: wrap;
    }
-
-   .artisan-badge {
-      display: none;
-   }
 }
 
 /* custom additions for Abby */
