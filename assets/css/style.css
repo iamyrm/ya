@@ -59,10 +59,6 @@ body {
    color: transparent;
 }
 
-.logo-text span {
-   font-weight: 400;
-}
-
 .nav-links {
    display: flex;
    gap: 2rem;
@@ -247,6 +243,11 @@ footer {
       padding: 1.5rem;
    }
 
+   /* .navbar-laravel {
+      flex-direction: column;
+      align-items: start;
+   } */
+
    .section-title {
       font-size: 1.8rem;
    }
@@ -320,197 +321,4 @@ footer {
 
 .section-header-center .badge-title-wrap {
    align-items: center;
-}
-
-/* ===== NEW CLASSES FOR INLINE CSS REPLACEMENT ===== */
-
-/* Hero section layout */
-.hero-wrap {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 4rem;
-   gap: 2rem;
-}
-
-.hero-content {
-   flex: 1;
-   min-width: 250px;
-}
-
-.hero-content .artisan-badge {
-   margin-bottom: 1rem;
-}
-
-.hero-title {
-   font-size: clamp(2.4rem, 5vw, 3.6rem);
-   font-weight: 800;
-   letter-spacing: -0.02em;
-   line-height: 1.2;
-}
-
-.hero-title .highlight {
-   color: #FF2D20;
-}
-
-.hero-subtitle {
-   font-size: 1.1rem;
-   color: #475569;
-   margin: 1.5rem 0;
-   max-width: 500px;
-}
-
-.hero-actions {
-   display: flex;
-   gap: 1rem;
-   flex-wrap: wrap;
-}
-
-.hero-contacts {
-   margin-top: 1.8rem;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 6px;
-}
-
-.hero-visual {
-   flex: 1;
-   min-width: 240px;
-}
-
-/* Craft section */
-.craft-section {
-   margin: 4rem 0;
-}
-
-/* Stack section */
-.stack-section {
-   margin: 4rem 0;
-}
-
-.stack-card {
-   background: #FAF9F5;
-}
-
-.stack-header {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   align-items: center;
-   gap: 1.5rem;
-}
-
-.stack-title {
-   margin: 1.5rem 0 1rem 0;
-}
-
-.stack-pills {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-   margin-bottom: 2rem;
-}
-
-/* Work section */
-.work-section {
-   margin: 4rem 0;
-}
-
-.work-grid-item .artisan-badge {
-   margin-top: 12px;
-}
-
-.work-grid-item h4 {
-   font-weight: 700;
-   margin-top: 12px;
-}
-
-.work-grid-item img {
-   width: auto;
-   height: 40px;
-}
-
-.work-extra-grid {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-   margin-top: 1rem;
-   justify-content: center;
-}
-
-.work-extra-grid .skill-pill {
-   background: #FFE2DE;
-}
-
-/* Connect section */
-.connect-section {
-   margin: 4rem 0;
-}
-
-.connect-card {
-   background: #FFFFFF;
-   text-align: center;
-}
-
-.connect-icon {
-   font-size: 2.5rem;
-   color: #FF2D20;
-}
-
-.connect-title {
-   font-size: 1.8rem;
-   font-weight: 700;
-   margin: 0.5rem 0;
-}
-
-.connect-title .highlight {
-   color: #FF2D20;
-}
-
-.connect-desc {
-   max-width: 500px;
-   margin: 0 auto 1.5rem;
-}
-
-.connect-code {
-   background: #1E293B;
-   max-width: 500px;
-   margin: 1rem auto;
-   text-align: left;
-}
-
-.connect-code .highlight-link {
-   color: #FFB86C;
-}
-
-.connect-actions {
-   display: flex;
-   gap: 1rem;
-   justify-content: center;
-   margin-top: 1.5rem;
-   flex-wrap: wrap;
-}
-
-.connect-actions .btn-solid {
-   background: #1E293B;
-   border: none;
-}
-
-/* Footer inspiration */
-.footer-inspire {
-   margin-top: 12px;
-}
-
-.footer-inspire .artisan-badge {
-   background: transparent;
-   color: #64748B;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-   .navbar-laravel {
-      flex-direction: column;
-      align-items: start;
-   }
 }

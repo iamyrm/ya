@@ -21,7 +21,7 @@
         <div class="navbar-laravel" id="navBar">
             <div class="logo-area">
                 <div class="logo-icon"><i class="fab fa-laravel"></i></div>
-                <div class="logo-text">Yagya<span>.</span>majhi</div>
+                <div class="logo-text">Yagya<span style="font-weight:400;">.majhi</span></div>
                 <div class="artisan-badge artisan-badge-hero"><i class="fas fa-terminal"></i> php artisan make:portfolio
                 </div>
             </div>
@@ -34,24 +34,27 @@
         </div>
 
         <!-- HERO -->
-        <div class="hero-wrap" id="heroSection">
-            <div class="hero-content">
-                <div class="artisan-badge"><i class="fas fa-code"></i> artisan · full-stack architect</div>
-                <h1 class="hero-title">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 4rem; gap: 2rem;"
+            id="heroSection">
+            <div style="flex:1; min-width: 250px;">
+                <div class="artisan-badge" style="margin-bottom: 1rem;"><i class="fas fa-code"></i> artisan · full-stack
+                    architect</div>
+                <h1
+                    style="font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2;">
                     Yagya Majhi<br>
-                    <span class="highlight">Eloquent & expressive</span> web artisan
+                    <span style="color:#FF2D20;">Eloquent & expressive</span> web artisan
                 </h1>
-                <p class="hero-subtitle">
+                <p style="font-size: 1.1rem; color: #475569; margin: 1.5rem 0; max-width: 500px;">
                     WordPress + Laravel fusion — building robust, scalable ecosystems with the elegance of Laravel's
                     philosophy and the power of WordPress CMS.
                 </p>
-                <div class="hero-actions">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <button class="btn-solid" id="exploreWorkBtn"><i class="fas fa-caret-right"></i> Explore
                         repositories</button>
                     <a href="#connect" class="btn-outline-laravel nav-links-hire"><i class="fas fa-paper-plane"></i>
                         Hire me</a>
                 </div>
-                <div class="hero-contacts">
+                <div style="margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 6px;">
                     <a class="contact-links" href="mailto:majhiyagya123@gmail.com">
                         <span class="contact-chip"><i class="fas fa-envelope"></i> majhiyagya123@gmail.com</span>
                     </a>
@@ -64,7 +67,7 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-visual">
+            <div style="flex:1; min-width: 240px;">
                 <div class="code-mood">
                     <span>➜</span> ~/portfolio$<br>
                     <span>➜</span> php artisan about<br>
@@ -76,8 +79,8 @@
             </div>
         </div>
 
-        <!-- CRAFT -->
-        <div class="craft-section" id="craft">
+        <!-- CRAFT : philosophy + real skills with badge above title — CENTERED -->
+        <div id="craft" style="margin: 4rem 0;">
             <div class="badge-title-wrap">
                 <span class="artisan-badge"><i class="fas fa-feather-alt"></i> The artisan philosophy</span>
                 <h2 class="section-title section-title-center">Write expressive <br>code, ship with confidence.</h2>
@@ -107,14 +110,15 @@
         </div>
 
         <!-- STACK -->
-        <div class="stack-section" id="stack">
-            <div class="card-elegant stack-card">
-                <div class="stack-header">
+        <div id="stack" style="margin: 4rem 0;">
+            <div class="card-elegant" style="background: #FAF9F5;">
+                <div
+                    style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 1.5rem;">
                     <span class="artisan-badge"><i class="fab fa-laravel"></i> composer require modern-stack</span>
                     <span><i class="fas fa-code-branch"></i> GitFlow | CI/CD</span>
                 </div>
-                <h2 class="section-title stack-title">Toolchain & ecosystem</h2>
-                <div class="stack-pills">
+                <h2 class="section-title" style="margin: 1.5rem 0 1rem 0;">Toolchain & ecosystem</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem;">
                     <span class="skill-pill"><i class="fab fa-laravel"></i> Laravel</span>
                     <span class="skill-pill"><i class="fab fa-php"></i> PHP</span>
                     <span class="skill-pill"><i class="fab fa-wordpress"></i> WordPress Core/API</span>
@@ -130,7 +134,7 @@
                     <span class="skill-pill"><i class="fab fa-git-alt"></i> Git & GitHub</span>
                     <span class="skill-pill"><i class="fas fa-cubes"></i> Laravel APIs</span>
                 </div>
-                <div class="code-mood">
+                <div class="code-mood" style="background: #0F172A;">
                     <span>➜</span> Yagya's artisan arsenal<br>
                     <span>➜</span> php artisan make:skill --list<br>
                     <span style="color:#94A3B8;">• HTML, CSS, JS, Bootstrap, Tailwind, React</span><br>
@@ -142,7 +146,7 @@
         </div>
 
         <!-- WORK -->
-        <div class="work-section" id="work">
+        <div id="work" style="margin: 4rem 0;">
             <div class="section-header-center">
                 <div class="badge-title-wrap">
                     <span class="artisan-badge"><i class="fas fa-folder-open"></i> artisan make:project</span>
@@ -150,122 +154,132 @@
                 </div>
             </div>
             <div class="feature-grid">
-                <div class="card-elegant work-grid-item">
-                    <img src="./assets/images/hulas.png" alt="Hulas Food Logo">
-                    <h4>
+                <div class="card-elegant">
+                    <!-- <i class="fas fa-utensils" style="color:#FF2D20; font-size: 1.8rem;"></i> -->
+                    <img src="./assets/images/hulas.png" width="auto" height="40px" alt="Hulas Food Logo">
+                    <h4 style="font-weight: 700; margin-top: 12px;">
                         <a href="https://hulasfood.com/" target="_blank">
                             Hulas Food <span>➜</span>
                         </a>
                     </h4>
-                    <div class="artisan-badge">Custom WP Theme</div>
+                    <div class="artisan-badge" style="margin-top: 12px;">Custom WP Theme</div>
                 </div>
-                <div class="card-elegant work-grid-item">
-                    <img src="./assets/images/kaha6.png" alt="Kaha6 Logo">
-                    <h4>
+                <div class="card-elegant">
+                    <!-- <i class="fas fa-globe" style="color:#FF2D20; font-size: 1.8rem;"></i> -->
+                    <img src="./assets/images/kaha6.png" height="40px" width="auto" alt="Kaha6 Logo">
+                    <h4 style="font-weight: 700; margin-top: 12px;">
                         <a href="https://kaha6.com/" target="_blank">
                             Kaha6 <span>➜</span>
                         </a>
                     </h4>
-                    <div class="artisan-badge">WordPress + RestAPI</div>
+                    <!-- <p style="color:#334155;">Multi-purpose dynamic websites with Laravel backend, React frontend, and
+                        seamless WordPress CMS integration.</p> -->
+                    <div class="artisan-badge" style="margin-top: 12px;">WordPress + RestAPI</div>
                 </div>
-                <div class="card-elegant work-grid-item">
-                    <img src="./assets/images/rathielectricals.png" alt="Hulas Food Logo">
-                    <h4>
+                <div class="card-elegant">
+                    <!-- <i class="fas fa-bolt" style="color:#FF2D20; font-size: 1.8rem;"></i> -->
+                    <img src="./assets/images/rathielectricals.png" width="auto" height="40px" alt="Hulas Food Logo">
+                    <h4 style="font-weight: 700; margin-top: 12px;">
                         <a href="https://new.rathielectricals.com/" target="_blank">
                             Rathi Electricals <span>➜</span>
                         </a>
                     </h4>
-                    <div class="artisan-badge">WordPress Custom Theme</div>
+                    <div class="artisan-badge" style="margin-top: 12px;">WordPress Custom Theme</div>
                 </div>
 
-                <div class="card-elegant work-grid-item">
-                    <img src="./assets/images/greenland.png" alt="Hulas Food Logo">
-                    <h4>
+                <div class="card-elegant">
+                    <!-- <i class="fas fa-heartbeat" style="color:#FF2D20; font-size: 1.8rem;"></i> -->
+                    <img src="./assets/images/greenland.png" width="auto" height="40px" alt="Hulas Food Logo">
+                    <h4 style="font-weight: 700; margin-top: 12px;">
                         <a href="https://greenlandcollege.edu.np/" target="_blank">
                             Greenland College <span>➜</span>
                         </a>
                     </h4>
-                    <div class="artisan-badge">WordPress Custom Theme</div>
+                    <div class="artisan-badge" style="margin-top: 12px;">WordPress Custom Theme</div>
                 </div>
             </div>
             <!-- extra projects -->
-            <div class="work-extra-grid">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; justify-content: center;">
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-check-circle"></i>
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-check-circle"></i>
                         hulasfood.com</span>
                 </a>
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-check-circle"></i>
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-check-circle"></i>
                         new.rathielectricals.com</span>
                 </a>
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-check-circle"></i>
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-check-circle"></i>
                         kaha6.com</span>
                 </a>
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-check-circle"></i>
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-check-circle"></i>
                         dyonaa.com</span>
                 </a>
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-check-circle"></i>
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-check-circle"></i>
                         prbiomedicals.com.np</span>
                 </a>
                 <a href="#" target="_blank">
-                    <span class="skill-pill"><i class="fas fa-plus-circle"></i> + much
+                    <span class="skill-pill" style="background: #FFE2DE;"><i class="fas fa-plus-circle"></i> + much
                         more</span>
                 </a>
             </div>
         </div>
 
         <!-- CONNECT: real contact -->
-        <div class="connect-section" id="connect">
-            <div class="card-elegant connect-card">
-                <i class="fab fa-laravel connect-icon"></i>
-                <h2 class="connect-title">Let's build something <span class="highlight">eloquent</span></h2>
-                <p class="connect-desc">Open for Laravel consulting, WordPress modernization, and full-stack collaborations.</p>
-                <div class="code-mood connect-code">
+        <div id="connect" style="margin: 4rem 0;">
+            <div class="card-elegant" style="background: #FFFFFF; text-align: center;">
+                <i class="fab fa-laravel" style="font-size: 2.5rem; color:#FF2D20;"></i>
+                <h2 style="font-size: 1.8rem; font-weight: 700; margin: 0.5rem 0;">Let's build something <span
+                        style="color:#FF2D20;">eloquent</span></h2>
+                <p style="max-width: 500px; margin: 0 auto 1.5rem;">Open for Laravel consulting, WordPress
+                    modernization, and full-stack collaborations.</p>
+                <div class="code-mood"
+                    style="background: #1E293B; max-width: 500px; margin: 1rem auto; text-align: left;">
                     <span>➜</span> php artisan make:contact<br>
                     <span>➜</span> email: <a href="mailto:majhiyagya123@gmail.com">
-                        <span class="highlight-link">
+                        <span style="color:#FFB86C;">
                             majhiyagya123@gmail.com
                         </span>
                     </a>
                     <br>
                     <span>➜</span> phone: <a href="tel:9804331857">
-                        <span class="highlight-link">
+                        <span style="color:#FFB86C;">
                             +977 (980) 433-1857
                         </span>
                     </a>
                     <br>
                     <span>➜</span> github:
                     <a href="https://github.com/iamyrm" target="_blank">
-                        <span class="highlight-link">
+                        <span style="color:#FFB86C;">
                             @iamyrm
                         </span>
                     </a>
                     <br>
                     <span>✨ artisan@work</span>
                 </div>
-                <div class="connect-actions">
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap;">
                     <a href="https://github.com/iamyrm" target="_blank" class="btn-outline-laravel"><i
                             class="fab fa-github"></i> GitHub</a>
                     <a href="https://www.linkedin.com/in/yagyaraj-majhi-0075b1235/" target="_blank"
                         class="btn-outline-laravel"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="mailto:majhiyagya123@gmail.com" class="btn-solid"><i class="fas fa-paper-plane"></i> Hire me</a>
+                    <a href="mailto:majhiyagya123@gmail.com" class="btn-solid"
+                        style="background: #1E293B; border: none;"><i class="fas fa-paper-plane"></i> Hire me</a>
                 </div>
             </div>
         </div>
 
         <footer>
-            Yagya Majhi • PHP • Laravel • WordPress
-            <div class="footer-inspire">
-                <span class="artisan-badge">php artisan inspire →
+            <!-- <i class="fab fa-laravel"> --></i>Yagya Majhi • PHP • Laravel • WordPress
+            <div style="margin-top: 12px;">
+                <span class="artisan-badge" style="background: transparent; color:#64748B;">php artisan inspire →
                     "Simplicity is the ultimate sophistication."</span>
             </div>
         </footer>
     </div>
 
-    <!-- Js -->
+    <!-- GSAP animations + scroll trigger -->
     <script src="./assets/js/script.js"></script>
 </body>
 
