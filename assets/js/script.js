@@ -76,10 +76,10 @@ const PROJECT_TABS = [
   { id: "frontend", label: "Frontend" },
   { id: "np", label: "News Portal" },
   { id: "collaboration", label: "Collaboration" },
+  { id: "ecom", label: "E-Commerce" },
   { id: "ai", label: "AI" },
   { id: "tools", label: "Tools" },
   { id: "fun", label: "Fun" },
-  { id: "ecom", label: "E-Commerce" },
   // { id: "custom", label: "Custom" },
 ];
 
