@@ -1,0 +1,212 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+#root,
+.main-wrapper {
+	background: #0C0C0C;
+	font-family: 'Kanit', sans-serif;
+	overflow-x: clip;
+}
+
+.hero-heading {
+	background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.contact-gradient {
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	box-shadow: 0 8px 24px rgba(245, 87, 108, 0.35);
+	transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.contact-gradient:hover {
+	box-shadow: 0 12px 32px rgba(245, 87, 108, 0.55);
+	transform: scale(1.02);
+}
+
+.magnet-item {
+	will-change: transform;
+	transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.magnet-item.inactive {
+	transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* fade & scale presets */
+.fade-el {
+	opacity: 0;
+	transform: translateY(40px) scale(0.96);
+	transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-el.visible {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+
+.deco-fade {
+	opacity: 0;
+	transform: translateX(-60px) scale(0.9);
+	transition: opacity 0.9s cubic-bezier(0.23, 1, 0.32, 1), transform 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.deco-fade.visible {
+	opacity: 1;
+	transform: translateX(0) scale(1);
+}
+
+.deco-fade.right {
+	transform: translateX(60px) scale(0.9);
+}
+
+.deco-fade.right.visible {
+	transform: translateX(0) scale(1);
+}
+
+.char-anim {
+	display: inline-block;
+	opacity: 0.15;
+	transition: opacity 0.15s ease;
+}
+
+.char-anim.revealed {
+	opacity: 1;
+}
+
+.sticky-card {
+	position: sticky;
+	top: 24px;
+	transform-origin: top center;
+	will-change: transform;
+	transition: transform 0.1s linear;
+}
+
+@media (min-width: 768px) {
+	.sticky-card {
+		top: 32px;
+	}
+}
+
+.marquee-row {
+	will-change: transform;
+}
+
+.service-border {
+	border-bottom: 1px solid rgba(12, 12, 12, 0.12);
+}
+
+.service-item:last-child .service-border {
+	border-bottom: none;
+}
+
+/* nav link hover */
+.nav-link {
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	opacity: 0.7;
+	transform: translateY(-1px);
+}
+
+/* ghost button */
+.ghost-btn {
+	border: 2px solid #D7E2EA;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ghost-btn:hover {
+	background: rgba(215, 226, 234, 0.08);
+	transform: scale(1.02);
+}
+
+/* skill pill */
+.skill-pill {
+	border: 2px solid rgba(12, 12, 12, 0.15);
+	transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-pill:hover {
+	background: #0C0C0C;
+	color: #F4F1EA;
+	border-color: #0C0C0C;
+	transform: scale(1.04);
+}
+
+/* contact links */
+.contact-link {
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-link:hover {
+	background: rgba(215, 226, 234, 0.08);
+	transform: scale(1.02);
+}
+
+/* projects modal */
+#projects-modal {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+#projects-modal.open {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+@media (max-width: 1023px) {
+	#magnet-container {
+		position: absolute !important;
+		top: 50% !important;
+		left: 50% !important;
+		transform: translate(-50%, -50%) !important;
+		bottom: auto !important;
+		right: auto !important;
+	}
+}
+
+/* Tab styles */
+.project-tab-btn {
+	transition: all 0.3s ease;
+}
+
+.project-tab-btn:hover {
+	transform: translateY(-2px);
+}
+
+/* Line clamp for descriptions */
+.line-clamp-2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Modal scrollbar */
+#projects-modal .relative {
+	scrollbar-width: thin;
+	scrollbar-color: #D7E2EA #0C0C0C;
+}
+
+#projects-modal .relative::-webkit-scrollbar {
+	width: 6px;
+}
+
+#projects-modal .relative::-webkit-scrollbar-track {
+	background: #0C0C0C;
+}
+
+#projects-modal .relative::-webkit-scrollbar-thumb {
+	background: #D7E2EA;
+	border-radius: 3px;
+}
