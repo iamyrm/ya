@@ -168,7 +168,7 @@ const projectsData = [
   },
   {
     name: "Rathi Electricals",
-    url: "https://new.rathielectricals.com/",
+    url: "https://rathielectricals.com/",
     images: ["./assets/images/projects/rathielectrical.jpg"],
     thumbnail: "./assets/images/projects/rathielectrical.jpg",
     category: "Client",
