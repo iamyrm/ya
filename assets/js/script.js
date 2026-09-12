@@ -289,7 +289,7 @@ const projectsData = [
     images: ["./assets/images/projects/dragon.png"],
     thumbnail: "./assets/images/projects/dragon.png",
     category: "Personal",
-    categories: ["wp", "other", "tools"],
+    categories: ["ai", "static", "fun"],
     // description: "",
   },
   {
