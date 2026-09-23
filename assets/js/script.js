@@ -312,6 +312,10 @@ const projectsData = [
   // description: p.description || "",
 }));
 
+// ======================= DISPLAYING PROJECTS COUNT =======================
+document.getElementById("project-count").textContent =
+  `(${projectsData.length})`;
+
 // ======================= BUILD FUNCTIONS =======================
 function buildMarquee() {
   const row1 = document.getElementById("marquee-row-1");
