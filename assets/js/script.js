@@ -1,5 +1,6 @@
 // ======================= DATA =======================
 const gifUrls = [
+  "./assets/images/projects/a2z.png",
   "./assets/images/projects/kaha6.jpg",
   "./assets/images/projects/hulasfood.jpg",
   "./assets/images/projects/northwest.jpg",
@@ -111,6 +112,15 @@ const projectsData = [
     category: "Client",
     categories: ["wp", "frontend"],
     // description: "HVAC company website with custom functionality",
+  },
+  {
+    name: "A2Z Riders Hub",
+    url: "https://iamyrm.github.io/a2z/",
+    images: ["./assets/images/projects/a2z.png"],
+    thumbnail: "./assets/images/projects/a2z.png",
+    category: "Personal",
+    categories: ["static", "frontend"],
+    // description: "News portal with real-time updates",
   },
   {
     name: "Saptari Jagran",
